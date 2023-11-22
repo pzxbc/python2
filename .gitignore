@@ -1,0 +1,6 @@
+.vs
+PC/pythonnt_rc_d.h
+PCbuild/amd64/
+PCbuild/obj/
+*.vcxproj.user
+/python.bat
