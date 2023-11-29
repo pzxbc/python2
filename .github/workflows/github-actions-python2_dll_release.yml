@@ -10,5 +10,6 @@ jobs:
         with:
           vs-version: '[17.6,]'
 
-      - name: Build app for release
-        run: msbuild --version
+      - name: Build Release DLL
+        run: cd PCbuild
+        run: build.bat -p x64 -c Release --no-tkinter
