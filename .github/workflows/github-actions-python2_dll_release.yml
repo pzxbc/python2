@@ -5,10 +5,14 @@ jobs:
   Building-Actions:
     runs-on: windows-2022
     steps:
-      - name: setup-msbuild
+      - name: Setup Msbuild
         uses: microsoft/setup-msbuild@v1.3.1
         with:
           vs-version: '[17.6,]'
+          msbuild-architecture: x64
+
+      - name: Check Out
+        uses: actions/checkout@v4
 
       - name: Build Release DLL
         run: |
