@@ -7,6 +7,8 @@ jobs:
     steps:
       - name: setup-msbuild
         uses: microsoft/setup-msbuild@v1.3.1
+        with:
+          vs-version: '[17.6.4,17.6.4]'
 
       - name: Build app for release
         run: msbuild --version
