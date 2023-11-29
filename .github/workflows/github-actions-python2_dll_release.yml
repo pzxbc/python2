@@ -11,5 +11,5 @@ jobs:
           vs-version: '[17.6,]'
 
       - name: Build Release DLL
-        run: cd PCbuild
         run: build.bat -p x64 -c Release --no-tkinter
+        work-directory: ./PCbuild
