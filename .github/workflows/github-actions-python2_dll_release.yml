@@ -12,4 +12,4 @@ jobs:
 
       - name: Build Release DLL
         run: build.bat -p x64 -c Release --no-tkinter
-        work-directory: ./PCbuild
+        working-directory: ./PCbuild
