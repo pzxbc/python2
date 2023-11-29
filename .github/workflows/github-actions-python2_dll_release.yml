@@ -16,7 +16,5 @@ jobs:
 
       - name: Build Release DLL
         run: |
-          pwd
-          dir
           cd PCbuild
-          build.bat -p x64 -c Release --no-tkinter
+          .\build.bat -p x64 -c Release --no-tkinter
