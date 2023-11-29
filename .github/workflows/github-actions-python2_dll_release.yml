@@ -1,0 +1,11 @@
+name: Python2 DLL Release
+run-name: Building Python2 Release DLL🚀
+on: workflow_dispatch
+jobs:
+  Building-Actions:
+  steps:
+    - name: setup-msbuild
+    - uses: microsoft/setup-msbuild@v1.3.1
+
+    - name: Build app for release
+    - run: msbuild --version
